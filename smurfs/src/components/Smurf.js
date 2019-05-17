@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 
 class Smurf extends Component{
-    constructor(){
+   constructor(props){
         super()
-    }
+    } 
 
     render(){
         return(
@@ -20,4 +21,4 @@ class Smurf extends Component{
         )
     }
 }
-export default Smurf;
+export default connect(null,{})(Smurf);
